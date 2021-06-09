@@ -1,0 +1,57 @@
+.box{
+    padding: 10px;
+    width: 90%;
+    margin: 100px auto 10px ;
+    border: 1px solid rgba(160, 160, 160, 0.568);
+    border-radius: 10px;
+    box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px; 
+    -webkit-box-shadow:  rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+    -moz-box-shadow:  rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;  
+    background-color: rgba(74, 9, 134, 0.3);
+    /*Grid Del Contenedor Gral de la Pag */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.box__section{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    margin: 2% auto;
+    width: 90%;
+    border: 1px solid rgba(160, 160, 160, 0.568);
+    border-radius: 10px;
+    box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px; 
+    -webkit-box-shadow:  rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+    -moz-box-shadow:  rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;   
+    align-self: center;
+    justify-self: center;   
+}
+
+.box--index{
+    @extend .box
+}
+
+.box__gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.box__gallery__img{
+    flex-basis: 42%;
+    height: 300px;
+    margin-top: 15px;
+    box-shadow: rgba(67, 65, 146, 0.75) 0px 0px 7px;
+}
+
+.box__footer{
+    background: rgb(2,0,36);
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}

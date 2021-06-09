@@ -1,0 +1,61 @@
+/* Grid Areas*/    
+/*.slider__home - esta seteado en _Slider*/
+
+.grid--slider{
+    grid-area: slider;
+}
+.grid--Upcoming{
+    grid-area: upcoming;
+}
+
+.grid--tweet{
+    grid-area: tweet;
+}
+.grid--somos{
+    grid-area: somos;
+}
+.grid--tour{
+    grid-area: tour;
+}
+/* Celulares */
+/*.box-container#index --> .box--index */
+@media only screen and (min-width: 320px) {
+    .box--index{
+        grid-template-areas: 
+        "slider         slider      slider      slider  "
+        "slider         slider      slider      slider  "
+        "upcoming       upcoming    upcoming    upcoming"   
+        "tweet          tweet       tweet       tweet   "
+        "tour           tour        tour        tour    "
+        "somos          somos       somos       somos   "
+        ;
+    }
+    a {
+        margin: 0.5rem;
+    }
+}
+
+/* kindle - Ipad */
+@media only screen and (min-width: 768px) {
+    .box--index {
+        grid-template-areas: 
+        "slider         slider      slider      slider"
+        "slider         slider      slider      slider"
+        "upcoming       upcoming    tweet       tweet"   
+        "tour           tour        somos       somos"
+        ;   
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+    .box--index {
+        grid-template-areas: 
+        "slider         slider      upcoming    upcoming"
+        "slider         slider      tweet       tweet"
+        "somos          somos       somos       somos"   
+        "tour           tour        tour        tour"
+        ;
+         
+    }    
+}
