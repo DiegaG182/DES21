@@ -14,5 +14,13 @@
   },
   "author": "Diego Garcia Sanchez",
   "license": "ISC",
-  "description": "Des21"
+  "description": "Des21",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegaG182/DES21.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DiegaG182/DES21/issues"
+  },
+  "homepage": "https://github.com/DiegaG182/DES21#readme"
 }

@@ -7,13 +7,13 @@
     box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px; 
     -webkit-box-shadow:  rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
     -moz-box-shadow:  rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;  
-    background-color: rgba(74, 9, 134, 0.3);
+    background-color: rgba(67, 65, 146, 0.45);
     /*Grid Del Contenedor Gral de la Pag */
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: auto; */
 }
 
 .box__section{
