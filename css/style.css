@@ -31,8 +31,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  /* grid-template-columns: 1fr;
-    grid-template-rows: auto; */ }
+  grid-template-columns: auto;
+  grid-template-rows: auto; }
 
 .box__section {
   padding: 10px;
@@ -94,7 +94,7 @@
 /* kindle - Ipad */
 @media only screen and (min-width: 768px) {
   .box--index {
-    grid-template-areas: "slider         slider      slider      slider" "slider         slider      slider      slider" "upcoming       upcoming    tweet       tweet"    "tour           tour        somos       somos"; } }
+    grid-template-areas: "slider         slider      slider      slider" "slider         slider      slider      slider" "upcoming       upcoming    tweet       tweet" "upcoming       upcoming    tweet       tweet"    "tour           tour        somos       somos" "tour           tour        somos       somos"; } }
 
 /* Desktop */
 @media only screen and (min-width: 1024px) {
