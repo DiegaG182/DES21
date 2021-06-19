@@ -20,8 +20,9 @@
     padding: 10px;
     background-color: rgb(255, 255, 255);
     opacity: 0.8;
-    margin: 2% auto;
-    width: 90%;
+    margin: 2% 3%;
+    width: 100%;
+    min-height: 200px;
     border: 1px solid rgba(160, 160, 160, 0.568);
     border-radius: 10px;
     box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px; 
@@ -32,7 +33,9 @@
 }
 
 .box--index{
-    @extend .box
+    @extend .box;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
 }
 
 .box__gallery{
