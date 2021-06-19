@@ -71,7 +71,7 @@
 .grid--slider {
   grid-area: slider; }
 
-.grid--Upcoming {
+.grid--upcoming {
   grid-area: upcoming; }
 
 .grid--tweet {
