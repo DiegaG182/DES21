@@ -1,7 +1,7 @@
 .header {
   /*propiedades del header */
-  background-color: #130f40;
-  background-image: linear-gradient(360deg, #130f40 0%, #000000 74%); }
+  background-color: rgba(67, 65, 146, 0.45);
+  background-image: linear-gradient(360deg, rgba(67, 65, 146, 0.45) 0%, #130f40 74%); }
   .header a {
     font-size: x-large;
     font-weight: 900; }
@@ -59,7 +59,7 @@
   box-shadow: rgba(67, 65, 146, 0.75) 0px 0px 7px; }
 
 .box__footer {
-  background: #020024;
+  background: rgba(67, 65, 146, 0.45);
   width: 90%;
   margin: auto;
   padding: 10px;
