@@ -30,6 +30,22 @@
     -moz-box-shadow:  rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;   
     align-self: center;
     justify-self: center;   
+    
+}
+
+.box-left{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.box-left .box-left-column{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 .box--index{
@@ -52,7 +68,7 @@
 }
 
 .box__footer{
-    background: rgba(67, 65, 146, 0.45);
+    background: rgb(1, 0, 10);
     width: 90%;
     margin: auto;
     padding: 10px;
