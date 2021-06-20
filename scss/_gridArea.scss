@@ -47,6 +47,12 @@
         "tour           tour        somos       somos"
         ;   
     }
+    .box-left .box-left-column{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+    }
 }
 
 /* Desktop */
