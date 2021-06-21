@@ -196,7 +196,7 @@ input, textarea {
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: auto; }
 
 .box__section {
