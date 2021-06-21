@@ -34,6 +34,7 @@ fieldset {
 @for $i from 1 through 2 {
     h#{$i} {
                 color: $font-color; 
+                margin-left: 1rem;
                 @if $i==2 {
                     font-weight: 600;    
                 }@else {font-weight: 600 /$i; }
@@ -44,10 +45,10 @@ fieldset {
 p {
     color: $font-color-city;
     margin: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     font-size: medium;
     line-height: 1.2rem;
-    letter-spacing: 0.1rem;        
+    letter-spacing: 0;        
 }   
 
 /*img*/
@@ -59,26 +60,6 @@ img{
 input, textarea{
     margin-top: 0.5rem;
 }
-
-/*Buttons*/
-.btn__color a {
-    display: inline-block;
-    text-transform: uppercase;
-    color: #ff0040;
-    text-decoration: none;
-    border: 2px solid;
-    background: transparent;
-    padding: 10px 40px;
-    font-size: 14px;
-    font-weight: 700;
-    -webkit-transition: 0.2s all;
-    transition: 0.2s all;
-    margin: 1rem;
-  }
-  
-  .btn__color a:hover {
-    color: #0004ff;
-  }
 
 
 /* IMPORT SCSS*/
