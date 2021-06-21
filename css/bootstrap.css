@@ -67,10 +67,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.2; }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw); }
+  font-size: calc(1.325rem + 0.9vw); }
   @media (min-width: 1200px) {
     h1, .h1 {
-      font-size: 2.5rem; } }
+      font-size: 2rem; } }
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw); }
@@ -5524,7 +5524,7 @@ textarea.form-control-lg {
   font-family: var(--bs-font-monospace) !important; }
 
 .fs-1 {
-  font-size: calc(1.375rem + 1.5vw) !important; }
+  font-size: calc(1.325rem + 0.9vw) !important; }
 
 .fs-2 {
   font-size: calc(1.325rem + 0.9vw) !important; }
@@ -7451,7 +7451,7 @@ textarea.form-control-lg {
 
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 2.5rem !important; }
+    font-size: 2rem !important; }
   .fs-2 {
     font-size: 2rem !important; }
   .fs-3 {
