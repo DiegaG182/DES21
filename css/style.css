@@ -1,133 +1,3 @@
-.header {
-  /*propiedades del header */
-  background-color: 130f40;
-  background-image: linear-gradient(360deg, #020024 0%, #01000a 74%); }
-  .header a {
-    font-size: x-large;
-    font-weight: 900; }
-
-.header__logo {
-  border-radius: 0.1rem;
-  width: 60px;
-  margin: 0 2rem; }
-
-.box, .box--index {
-  padding: 10px;
-  width: 90%;
-  margin: 100px auto 10px;
-  border: 1px solid rgba(160, 160, 160, 0.568);
-  border-radius: 10px;
-  box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
-  -webkit-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
-  -moz-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
-  background-color: rgba(67, 65, 146, 0.45);
-  /*Grid Del Contenedor Gral de la Pag */
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: auto;
-  grid-template-rows: auto; }
-
-.box__section {
-  padding: 10px;
-  background-color: white;
-  opacity: 0.8;
-  margin: 2% 2%;
-  width: 98%;
-  min-height: 200px;
-  border: 1px solid rgba(160, 160, 160, 0.568);
-  border-radius: 10px;
-  box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
-  -webkit-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
-  -moz-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
-  align-self: center;
-  justify-self: center; }
-
-.box-left {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center; }
-
-.box-left .box-left-column {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center; }
-
-.box--index {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto; }
-
-.box__gallery {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly; }
-
-.box__gallery__img {
-  flex-basis: 42%;
-  height: 300px;
-  margin-top: 15px;
-  box-shadow: rgba(67, 65, 146, 0.75) 0px 0px 7px; }
-
-.box__footer {
-  background: #01000a;
-  width: 90%;
-  margin: auto;
-  padding: 10px;
-  border-radius: 10px; }
-
-/* Grid Areas*/
-/*.slider__home - esta seteado en _Slider*/
-.grid--slider {
-  grid-area: slider; }
-
-.grid--upcoming {
-  grid-area: upcoming; }
-
-.grid--tweet {
-  grid-area: tweet; }
-
-.grid--somos {
-  grid-area: somos; }
-
-.grid--tour {
-  grid-area: tour; }
-
-/* Celulares */
-/*.box-container#index --> .box--index */
-@media only screen and (min-width: 320px) {
-  .box--index {
-    grid-template-areas: "slider         slider      slider      slider  " "slider         slider      slider      slider  " "upcoming       upcoming    upcoming    upcoming"    "tweet          tweet       tweet       tweet   " "tour           tour        tour        tour    " "somos          somos       somos       somos   "; }
-  a {
-    margin: 0.5rem; } }
-
-/* kindle - Ipad */
-@media only screen and (min-width: 768px) {
-  .box--index {
-    grid-template-areas: "slider         slider      slider      slider" "slider         slider      slider      slider" "upcoming       upcoming    tweet       tweet" "upcoming       upcoming    tweet       tweet"    "tour           tour        somos       somos" "tour           tour        somos       somos"; }
-  .box-left .box-left-column {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column; } }
-
-/* Desktop */
-@media only screen and (min-width: 1024px) {
-  .box--index {
-    grid-template-areas: "slider         slider      upcoming    upcoming" "slider         slider      tweet       tweet" "somos          somos       somos       somos"    "tour           tour        tour        tour"; } }
-
-/* Slider Home */
-.slider__home {
-  min-height: 420px;
-  width: 96%;
-  margin: 2%;
-  /*imagenes a 450px de alto maximo*/ }
-
-.slider__img {
-  width: 50%; }
-
 #contenedor404 {
   position: relative;
   height: 100vh;
@@ -196,7 +66,7 @@
       letter-spacing: 13px;
       margin: 0; }
 
-.notfound .notfound-404 .notfound .notfound-404 .notfound a {
+.notfound a {
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
   text-transform: uppercase;
@@ -221,6 +91,7 @@
   .notfound .notfound-404 h1 {
     font-size: 162px; } }
 
+/*El resto de los imports estan abajo*/
 * {
   margin: 0px;
   padding: 0px; }
@@ -279,7 +150,170 @@ input, textarea {
   font-size: 14px;
   font-weight: 700;
   -webkit-transition: 0.2s all;
-  transition: 0.2s all; }
+  transition: 0.2s all;
+  margin: 1rem; }
 
 .btn__color a:hover {
   color: #0004ff; }
+
+/* IMPORT SCSS*/
+/* Slider Home */
+.slider__home {
+  min-height: 420px;
+  width: 96%;
+  margin: 2%;
+  /*imagenes a 450px de alto maximo*/ }
+
+.img__50 {
+  width: 50%; }
+
+.img__100 {
+  width: 100%; }
+
+.header {
+  /*propiedades del header */
+  background-color: 130f40;
+  background-image: linear-gradient(360deg, #020024 0%, #01000a 74%); }
+  .header a {
+    font-size: x-large;
+    font-weight: 900; }
+
+.header__logo {
+  border-radius: 0.1rem;
+  width: 60px;
+  margin: 0 2rem; }
+
+.box, .box--index {
+  padding: 10px;
+  width: 90%;
+  margin: 100px auto 10px;
+  border: 1px solid rgba(160, 160, 160, 0.568);
+  border-radius: 10px;
+  box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+  -webkit-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+  -moz-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+  background-color: rgba(67, 65, 146, 0.45);
+  /*Grid Del Contenedor Gral de la Pag */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto; }
+
+.box__section {
+  padding: 10px;
+  background-color: white;
+  opacity: 0.8;
+  margin: 2% 2%;
+  width: 98%;
+  min-height: 200px;
+  border: 1px solid rgba(160, 160, 160, 0.568);
+  border-radius: 10px;
+  box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+  -webkit-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+  -moz-box-shadow: rgba(67, 65, 146, 0.45) 0px 5px 15px 0px;
+  align-self: center;
+  justify-self: center; }
+
+/*Box con contenido a izq*/
+.box-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center; }
+
+.box-content .box-left-column {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center; }
+
+/* .box-left .box-left-column .side-item{
+    order: 2;
+} */
+/*Modificacion para contenido a derecha*/
+.box-content .box-right-column {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  align-items: center; }
+
+/* .box-right .box-right-column .side-item{
+    order: 1;
+} */
+/* Contenedor General Para Index*/
+.box--index {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+
+/*Galleria tipo Insta */
+.box__gallery {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
+.box__gallery__img {
+  flex-basis: 42%;
+  height: 300px;
+  margin-top: 15px;
+  box-shadow: rgba(67, 65, 146, 0.75) 0px 0px 7px; }
+
+.box__footer {
+  background: #01000a;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px; }
+
+/* Grid Areas*/
+/*.slider__home - esta seteado en _Slider*/
+.grid--slider {
+  grid-area: slider; }
+
+.grid--upcoming {
+  grid-area: upcoming; }
+
+.grid--tweet {
+  grid-area: tweet; }
+
+.grid--somos {
+  grid-area: somos; }
+
+.grid--tour {
+  grid-area: tour; }
+
+/*Default*/
+/* Celulares */
+@media only screen and (max-width: 767px) {
+  .box--index {
+    grid-template-areas: "slider         slider      slider      slider  " "slider         slider      slider      slider  " "upcoming       upcoming    upcoming    upcoming"    "tweet          tweet       tweet       tweet   " "tour           tour        tour        tour    " "somos          somos       somos       somos   "; }
+  a {
+    margin: 0.5rem; }
+  .box-content .box-left-column, .box-content .box-right-column {
+    flex-direction: column; }
+  .img__50 {
+    width: 100%; } }
+
+/* kindle - Ipad */
+@media only screen and (min-width: 768px) {
+  .box--index {
+    grid-template-areas: "slider         slider      slider      slider" "slider         slider      slider      slider" "upcoming       upcoming    tweet       tweet" "upcoming       upcoming    tweet       tweet"    "tour           tour        tour        tour" "somos           somos       somos       somos"; }
+  .box-content .box-left-column {
+    flex-direction: row; }
+  .box-content .box-right-column {
+    flex-direction: row-reverse; }
+  .img__50 {
+    width: 50%; } }
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+  .box--index {
+    grid-template-areas: "slider         slider      upcoming    upcoming" "slider         slider      tweet       tweet" "tour           tour        tour        tour" "somos          somos       somos       somos"; }
+  .box-content .box-left-column {
+    flex-direction: row; }
+  .box-content .box-right-column {
+    flex-direction: row-reverse; }
+  .img__50 {
+    width: 50%; } }

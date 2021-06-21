@@ -1,9 +1,6 @@
-@import "variables.scss";
-@import "navbar.scss";
-@import "box.scss";
-@import "gridArea.scss";
-@import "slider.scss";
 @import "404.scss";
+@import "variables.scss";
+/*El resto de los imports estan abajo*/
 
 
 *{
@@ -70,8 +67,19 @@ input, textarea{
     font-weight: 700;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
+    margin: 1rem;
   }
   
   .btn__color a:hover {
     color: #0004ff;
   }
+
+
+/* IMPORT SCSS*/
+@import "slider.scss";
+@import "navbar.scss";
+@import "box.scss";
+@import "gridMedia.scss";
+
+
+

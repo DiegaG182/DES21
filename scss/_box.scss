@@ -33,7 +33,8 @@
     
 }
 
-.box-left{
+/*Box con contenido a izq*/
+.box-content{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -41,19 +42,36 @@
     align-items: center;
     justify-content: center;
 }
-.box-left .box-left-column{
+.box-content .box-left-column{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
 }
 
+/* .box-left .box-left-column .side-item{
+    order: 2;
+} */
+
+/*Modificacion para contenido a derecha*/ 
+.box-content .box-right-column{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+/* .box-right .box-right-column .side-item{
+    order: 1;
+} */
+
+/* Contenedor General Para Index*/
 .box--index{
     @extend .box;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
 
+/*Galleria tipo Insta */
 .box__gallery{
     display: flex;
     flex-flow: row wrap;
