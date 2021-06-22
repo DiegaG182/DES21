@@ -49,35 +49,77 @@
         
         
         <div class="box__section">
-            <h1>Contactanos!</h1>
-            <form action="enviar.php" method="POST" enctype="multipart/form-data">
-                <fieldset>
-                    <!-- <legend>Formulario de Contacto</legend>    -->
-                    <label for="h1">Querés suscribirte a nuestro Newsletter?</label> 
-                <br>
-                    <input type="checkbox" name="suscribirse" id="checksuscripcion">
-                <br>
-                    <label for="conocerForm">Dónde nos conociste?:</label>
-                    <select id="conocerForm" name="conocer" autofocus>
-                        <option value="youtube">Youtube</option>
-                        <option value="The Cavern">The Cavern</option>
-                        <option value="Recitales">Recitales</option>
-                        <option value="Otros">Recomendación</option>
-                    </select>
-                <br>
-                    <input type="text" placeholder="Nombre" autofocus>
-                <br>
-                    <input type="email" placeholder="Email" autofocus>
-                <br>
-                    <input type="tel" placeholder="Tel: 011-456-1234" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" autofocus>
-                <br>    
-                    <textarea name="comentario" id="comentarioForm" cols="30" rows="10" placeholder="comentario..." autofocus></textarea>
-                <br>    
-                    <button type="submit">Enviar</button>
-                    <input type="reset" value="Resetear Formulario">
-                </fieldset>
-            </form>
-        </div>
+          <section id="contact-form-section" class="form-content-wrap">
+            <div class="container">
+              <div class="row">
+                <div class="tab-content">
+                  <div class="col-sm-12">
+                    <div class="item-wrap">
+                      <div class="row">
+                        
+                        <div class="col-sm-12">
+                          <div class="item-content colBottomMargin">
+                            <div class="item-info">
+                              <h2 class="item-title text-center">Contactate con Nosotros!</h2>
+                            </div>
+                            
+                          </div><!--End item-content -->
+                        </div><!--End col -->
+                        
+                        <div class="col-md-12">
+                        
+                        <form id="contactForm" name="contactform" data-toggle="validator" class="popup-form">
+                                <div class="row">
+                                  <div id="msgContactSubmit" class="hidden"></div>
+                                  
+                                  <div class="form-group col-sm-6">
+                                    <div class="help-block with-errors"></div>
+                                    <input name="fname" id="fname" placeholder="Tu nombre*" class="form-control" type="text" required data-error="Por favor ingresa tu nombre"> 
+                                    <div class="input-group-icon"><i class="bi bi-file-person-fill"></i></div>
+                                  </div><!-- end form-group -->
+                                  <div class="form-group col-sm-6">
+                                    <div class="help-block with-errors"></div>
+                                    <input name="email" id="email" placeholder="Tu E-mail*" pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email" required data-error="Por favor ingresa un correo electrónico válido">
+                                    <div class="input-group-icon"><i class="bi bi-envelope-fill"></i></div>
+                                  </div><!-- end form-group -->
+                                  <div class="form-group col-sm-6">
+                                    <div class="help-block with-errors"></div>
+                                    <input name="phone" id="phone" placeholder="Teléfono*" class="form-control" type="text" required data-error="Por favor ingresa tu número de teléfono">
+                                    <div class="input-group-icon"><i class="bi bi-telephone-fill"></i></div> 
+                                  </div><!-- end form-group -->
+                                  <div class="form-group col-sm-6">
+                                    <div class="help-block with-errors"></div>
+                                    <input name="subject" id="subject" placeholder="Asunto*" class="form-control" type="text" required data-error="Por favor ingresa el asunto">
+                                    <div class="input-group-icon"><i class="bi bi-terminal-fill"></i></div> 
+                                  </div><!-- end form-group -->
+                                  <div class="form-group col-sm-12">
+                                    <div class="help-block with-errors"></div>
+                                    <textarea rows="3" name="message" id="message" placeholder="Escribe tu comentario aquí*" class="form-control" required data-error="Por favor ingresa un mensaje"></textarea>
+                                    <div class="textarea input-group-icon"><i class="bi bi-pencil-fill"></i></div>
+                                  </div><!-- end form-group -->
+                                  
+                                  <div class="form-group  col-sm-12"> 
+                                    <button type="submit" id="submit" class="btn btn-custom"><i class="bi bi-envelope-fill"></i> Enviar</button>
+                                  </div>  <!-- end form-group -->	
+                                  <div class="form-group last col-sm-12"> 
+                                    <button type="reset" id="reset" class="btn btn-custom"><i class="bi bi-trash-fill"></i> Borrar Formulario</button>
+                                  </div>
+                                    <span>* Campos requeridos</span>
+                                  
+                                </div><!-- end row -->
+                              </form><!-- end form -->
+                        
+                        </div> <!-- End Form -->
+
+                      </div><!--End row -->
+                      <!-- Popup end -->
+                    </div><!-- end item-wrap -->
+                  </div><!--End col -->
+                </div><!--End tab-content -->
+              </div><!--End row -->
+            </div><!--End container -->
+          </section>
+        </div> <!-- End box -->
         
     </div>
     
@@ -104,6 +146,9 @@
 
   <!-- Bootstrap JS -->  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
-
+  <!-- Contact Form Validator Js -->
+  <script src="js/validator.min.js"></script>
+	<!-- Contact Form Js -->
+	<script src="js/contact-form.js"></script>  
 </body>
 </html>
