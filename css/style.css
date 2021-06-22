@@ -669,16 +669,7 @@ input, textarea {
   width: 200px;
   border-radius: 6px; }
 
-.popup-form .btn.btn-custom::after {
-  content: "\f0a9";
-  font-family: fontawesome;
-  font-size: 22px;
-  color: #fff;
-  opacity: 0;
-  position: absolute;
-  right: 50px;
-  transition: all 0.3s ease 0s; }
-
+/* .popup-form .btn.btn-custom::after{content:"\f0a9";font-family:fontawesome;font-size:22px;color:#fff;opacity:0;position:absolute;right:50px;transition:all 0.3s ease 0s;} */
 .popup-form .btn.btn-custom:hover::after {
   opacity: 1;
   right: 10px;
