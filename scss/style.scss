@@ -54,7 +54,7 @@ p {
 /*img*/
 img{
     object-fit: cover;
-    width: 90%;
+    width: 100%;
 }
 
 input, textarea{
@@ -63,11 +63,12 @@ input, textarea{
 
 
 /* IMPORT SCSS*/
+/* @import "contactForm.scss"; */
 @import "slider.scss";
 @import "navbar.scss";
 @import "box.scss";
 @import "gridMedia.scss";
-@import "contactForm.scss";
+
 
 
 

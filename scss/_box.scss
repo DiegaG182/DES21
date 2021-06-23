@@ -50,6 +50,13 @@
     align-items: center;
 }
 
+.box-content .box-integrantes{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+
 
 /*Modificacion para contenido a derecha*/ 
 .box-content .box-right-column{
