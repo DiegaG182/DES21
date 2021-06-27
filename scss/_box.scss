@@ -50,14 +50,6 @@
     align-items: center;
 }
 
-.box-content .box-integrantes{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-
 /*Modificacion para contenido a derecha*/ 
 .box-content .box-right-column{
     display: flex;
@@ -72,6 +64,57 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 }
+
+/*contenedor para los integrantes */
+.box__integrantes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.box__integrantes__img{
+    flex-basis: 20%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    /* height: 600px; */
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*over integrantes*/
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  /* When you mouse over the container, the overlay text will "zoom" in display */
+  .container:hover .overlay {
+    transform: scale(1);
+  }
+  
+  /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 
 /*Galleria tipo Insta */
 .box__gallery{
