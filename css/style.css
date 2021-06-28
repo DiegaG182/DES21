@@ -725,7 +725,7 @@ input, textarea {
     color: whitesmoke;
     font-size: 1em; }
   .text {
-    font-size: small; } }
+    font-size: 9px; } }
 
 /* kindle - Ipad */
 @media only screen and (min-width: 768px) {
