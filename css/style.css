@@ -686,6 +686,10 @@ input, textarea {
   padding: 10px;
   border-radius: 10px; }
 
+.footer__text {
+  color: whitesmoke;
+  font-size: 0.7rem; }
+
 /* Grid Areas*/
 /*.slider__home - esta seteado en _Slider*/
 .grid--slider {
