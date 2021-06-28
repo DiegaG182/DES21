@@ -169,7 +169,6 @@ input, textarea {
   width: 100%; }
 
 .item-title {
-  color: #0097e6;
   font-size: 32px;
   font-weight: bold;
   margin: 0 auto 30px; }
@@ -641,7 +640,6 @@ input, textarea {
 /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
 .text {
   color: white;
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -710,7 +708,7 @@ input, textarea {
 /*Media Queries */
 /*Default*/
 /* Celulares */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 310px) {
   .box--index {
     grid-template-areas: "slider         slider      slider      slider  " "slider         slider      slider      slider  " "upcoming       upcoming    upcoming    upcoming"    "tweet          tweet       tweet       tweet   " "tour           tour        tour        tour    " "somos          somos       somos       somos   "; }
   a {
@@ -726,9 +724,8 @@ input, textarea {
     font-weight: 400;
     color: whitesmoke;
     font-size: 1em; }
-  /* .navbar-toggler-icon, .navbar-dark .navbar-toggler{
-        color: red;
-    }  */ }
+  .text {
+    font-size: small; } }
 
 /* kindle - Ipad */
 @media only screen and (min-width: 768px) {
